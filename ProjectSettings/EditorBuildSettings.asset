@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Demo_RandomCharacter 1.unity
+    guid: 69d232151e1ff7d438dc42eb7346a673
+  - enabled: 1
+    path: Assets/RPGCombatSystem/Scenes/Environment.unity
+    guid: ecfda2817fabf9046ac5280295419a40
   m_configObjects: {}

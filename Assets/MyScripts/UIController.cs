@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class UIController : MonoBehaviour
 {
+    
     Transform camHolder;
 
     private Camera ZoomCamera;
@@ -92,6 +93,21 @@ public class UIController : MonoBehaviour
         {
             y = Mathf.Clamp(y, -45, 15);
             camHolder.eulerAngles = new Vector3(y, x, 0.0f);
+        }
+    }
+
+    public static UIController instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this);
+        }
+        else
+        {
+            Destroy(this);
         }
     }
 
